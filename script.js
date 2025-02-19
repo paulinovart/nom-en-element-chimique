@@ -1,4 +1,4 @@
-// Fonction pour convertir le prénom en un nombre total
+
 function convertNameToNumber(name) {
     let alphabet = 'abcdefghijklmnopqrstuvwxyz';
     let sum = 0;
@@ -13,7 +13,7 @@ function convertNameToNumber(name) {
     return sum;
 }
 
-// Liste des 118 éléments chimiques avec leur numéro atomique
+
 const elements = [
     ["L'Hydrogène", "H", "1", "Non-métaux", "1,008","C’est l’élément le plus léger et le plus abondant de l’univers. Il compose la majeure partie des étoiles et sert de carburant dans les réactions de fusion nucléaire."],
     ["L'Hélium", "He", "2", "Gaz nobles", "4,003","Il est si léger qu’il s’échappe progressivement de l’atmosphère terrestre. C’est aussi lui qui donne aux ballons leur capacité à flotter."],
@@ -136,7 +136,7 @@ const elements = [
 ]
 ;
 
-// Fonction principale
+
 document.addEventListener("DOMContentLoaded", function () {
     let input = document.querySelector(".entrer_prenom input");
     let button = document.querySelector(".entrer_prenom button");
@@ -152,17 +152,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (userName) {
             let atomicNumber = convertNameToNumber(userName);
-            console.log("Numéro atomique calculé : ", atomicNumber);  // Debug log
+           
 
 
-            // Réduction de la somme si elle dépasse 118
+            
             while (atomicNumber > 118) {
                 atomicNumber = atomicNumber.toString().split("").reduce((a, b) => a + parseInt(b), 0);
             }
 
-            // Récupérer l'élément chimique exact
-            let element = elements[atomicNumber - 1]; // -1 car index commence à 0
-            elementDiv.innerHTML = `${element[0]}`;  // Nom 
+           
+            let element = elements[atomicNumber - 1];
+            elementDiv.innerHTML = `${element[0]}`;  
             symboleDiv.innerHTML = `<span class="texte">Symbole : </span><span class="valeur">${element[1]}</span>`;  
             numeroDiv.innerHTML = `<span class="texte">Numéro atomique : </span><span class="valeur">${element[2]}</span>`;  
             groupeDiv.innerHTML = `<span class="texte">Groupe : </span><span class="valeur">${element[3]}</span>`;  
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     input.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
-            button.click(); // Simule un clic sur le bouton
+            button.click(); 
         }
     });
 });
