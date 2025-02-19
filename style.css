@@ -1,0 +1,124 @@
+h1{
+    
+    text-align: center;
+    font-family: "new-science", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #237194;
+}
+h3{
+    color: #237194;
+}
+h2{
+    font-family: "poppins", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+color: #237194;}
+.bold{
+    font-weight: 800;
+}
+
+.pauline_chimique img{
+    width: 180px;
+   
+}
+.entrer_prenom{
+   
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.entrer_prenom input {
+    width: 280px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(230, 230, 230); 
+    padding: 2px;
+    padding-left: 20px;
+
+}
+
+.entrer_prenom button{
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #237194;
+    color : #f1f1f2;
+}
+.entrer_prenom button:hover{
+    background-color: #faa32b;
+}
+.bas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "new-science", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+main{
+    
+  
+    justify-content: center;
+    display: flex;
+}
+
+.carte{
+    width: 500px ;  
+    background-color: #f1f1f2;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+html{
+    background-color: #00bbd6; 
+}
+.element{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: 800;
+    color: #faa32b;
+}
+
+.texte {
+    color: #237194;
+    font-size: 20px;
+}
+.desc_titre{
+    text-align: center;
+    display: block;
+    color: #237194;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.valeur {
+    color: #faa32b;
+    font-size: 20px;
+}
+
+.symbole, .numero, .groupe, .masse{
+    padding-bottom: 11px;
+}
+
+header img {
+    width: 80px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+.tableau_periodique img{
+    width: 100%;
+}
